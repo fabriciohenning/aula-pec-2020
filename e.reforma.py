@@ -1,0 +1,6 @@
+alt = float(input('Digite a altura das paredes da sala, em metros: '))
+compr = float(input('Digite o comprimento da sala, em metros: '))
+larg = float(input('Digite a largura da sala, em metros: '))
+print(f'A área do piso é de {compr * larg:.2f} metros quadrados.')
+print(f'O volume é de {alt * compr * larg:.2f} metros cúbicos.')
+print(f'A área das paredes é de {2 * alt * larg + 2 * alt * compr} metros quadrados.')
