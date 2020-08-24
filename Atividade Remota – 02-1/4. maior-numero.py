@@ -1,0 +1,8 @@
+n1 = int(input('Digite o 1º número: '))
+n2 = int(input('Digite o 2º número: '))
+n3 = int(input('Digite o 3º número: '))
+n4 = int(input('Digite o 4º número: '))
+n5 = int(input('Digite o 5º número: '))
+print(f'O maior número entre eles é {max(n1, n2, n3, n4, n5)}.')
+print(f'O menor número entre eles é {min(n1, n2, n3, n4, n5)}.')
+print(f'A média aritmética dos números lidos é {(n1+n2+n3+n4+n5)/5}.')
