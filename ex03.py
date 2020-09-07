@@ -1,25 +1,15 @@
-n1 = int(input('1º número: '))
-n2 = int(input('2º número: '))
-n3 = int(input('3º número: '))
-n4 = int(input('4º número: '))
-n5 = int(input('5º número: '))
-maior = n1
-if n2 > n1 and n2 > n3 and n2 > n4 and n2 > n5:
-    maior = n2
-if n3 > n1 and n3 > n2 and n3 > n4 and n3 > n5:
-    maior = n3
-if n4 > n1 and n4 > n2 and n4 > n3 and n4 > n5:
-    maior = n4
-if n5 > n1 and n5 > n2 and n5 > n3 and n5 > n4:
-    maior = n5
-print(f'Dentre os 5 números digitados, o maior é {maior};')
-menor = n1
-if n2 < n1 and n2 < n3 and n2 < n4 and n2 < n5:
-    menor = n2
-if n3 < n1 and n3 < n2 and n3 < n4 and n3 < n5:
-    menor = n3
-if n4 < n1 and n4 < n2 and n4 < n3 and n4 < n5:
-    menor = n4
-if n5 < n1 and n5 < n2 and n5 < n3 and n5 < n4:
-    menor = n5
-print(f'E dentre os mesmos números, o menor é {menor}.')
+num = int(input('Digite um número inteiro entre 10 e 99: '))
+digito_impar = 0
+if 10 <= num <= 99:
+    u = num // 1 % 10
+    if u % 2 != 0:
+        digito_impar = digito_impar + 1
+    d = num // 10 % 10
+    if d % 2 != 0:
+        digito_impar = digito_impar +1
+    if digito_impar == 0:
+        print('Nenhum dígito é ímpar.')
+    elif digito_impar == 1:
+        print('Apenas um dígito é ímpar.')
+    elif digito_impar == 2:
+        print('Os dois dígitos são ímpares.')

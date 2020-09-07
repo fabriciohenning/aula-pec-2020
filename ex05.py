@@ -1,15 +1,28 @@
-p = float(input('Qual o seu peso, em Kg? '))
-a = float(input('Qual sua altura, em m? '))
-imc = p / (a ** 2)
-if imc < 18.5:
-    print(f'Seu IMC é {imc:.0f}.\nAbaixo do peso.')
-elif 18.5 <= imc < 25:
-    print(f'Seu IMC é {imc:.0f}.\nPeso normal.')
-elif 25 <= imc < 30:
-    print(f'Seu IMC é {imc:.0f}.\nSobrepeso.')
-elif 30 <= imc < 35:
-    print(f'Seu IMC é {imc:.0f}.\nObeso leve.')
-elif 35 <= imc < 40:
-    print(f'Seu IMC é {imc:.0f}.\nObeso moderado.')
-else:
-    print(f'Seu IMC é {imc:.0f}.\nObeso mórbido.')
+# Ordem crescente de 3 números
+n1 = int(input('Primeiro número: '))
+n2 = int(input('Segundo número: '))
+n3 = int(input('Terceiro número: '))
+if n1 < n2 < n3:
+    print(n1)
+    print(n2)
+    print(n3)
+elif n1 < n3 < n2:
+    print(n1)
+    print(n3)
+    print(n2)
+elif n2 < n1 < n3:
+    print(n2)
+    print(n1)
+    print(n3)
+elif n2 < n3 < n1:
+    print(n2)
+    print(n3)
+    print(n1)
+elif n3 < n1 < n2:
+    print(n3)
+    print(n1)
+    print(n2)
+elif n3 < n2 < n1:
+    print(n3)
+    print(n2)
+    print(n1)
