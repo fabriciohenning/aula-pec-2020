@@ -39,7 +39,6 @@ def maior_preco(empresa):
 
 def main():
     # Carrega os dados da empresa a partir do arquivo .csv
-
     empresa = carregar(input())
 
     # Qual o maior preço de abertura e a data em que ocorreu?
